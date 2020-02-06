@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.port": 5501,
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.deploySubpath": "",
+  "appService.defaultWebAppToDeploy": "/subscriptions/571b648e-e65f-4fc9-8f7a-f71a3437b9ea/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/material-io-scss-start"
+}

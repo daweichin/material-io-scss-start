@@ -1,9 +1,10 @@
 const puppeteer = require("puppeteer");
-console.log("scrapping started");
 
 async function scrape(url) {
   console.log("the url is " + url);
-  const browser = await puppeteer.launch();
+  let browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  });
   const page = await browser.newPage();
   await page.setViewport({
     width: 1000,
@@ -34,7 +35,7 @@ async function scrape(url) {
 
   // secondary
   let [el3] = await page.$x(
-    "/html/body/div/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/ul/li[2]/p[2]"
+    "/html/body/div[1]/div[3]/div[2]/div[1]/div[2]/div[2]/div[1]/div/p"
   );
   let $secondary = await el3.getProperty("textContent");
   $secondary = await $secondary.jsonValue();

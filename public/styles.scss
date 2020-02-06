@@ -1,0 +1,156 @@
+/* Material UI Color Theme */
+$primary: #0d47a1;
+$p_light: #5472d3;
+$p_dark: #002171;
+$secondary: #8e24aa;
+$s_light: #c158dc;
+$s_dark: #5c007a;
+
+// common styling
+
+a:active,
+a:visited {
+  color: black;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $primary;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+
+// main styling
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 4rem;
+
+  .left-wrapper {
+    padding: 0 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    border: $primary;
+    height: 40vh;
+    min-width: 300px;
+
+    .heading {
+      height: 30%;
+      width: 100%;
+      margin-bottom: 2rem;
+      background-color: $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      border-radius: 1rem;
+      font-family: "Petit Formal Script", cursive;
+      font-size: 2rem;
+    }
+
+    .content {
+      background-color: $p_light;
+      flex-grow: 1;
+      border-radius: 1rem;
+    }
+  }
+
+  .right-wrapper {
+    background-color: $p_dark;
+    border-radius: 1rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+    flex-grow: 1;
+    padding: 3rem;
+  }
+
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    #myForm {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      * {
+        height: 2rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      input {
+        line-height: 0;
+        white-space: nowrap;
+        overflow: scroll;
+        width: 100%;
+        border: 1px solid $s_dark;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+  .content-output {
+    overflow-y: scroll;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+}
+
+// global styles
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+// spinner css
+#spinner {
+  margin: 8px;
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// buttons
+button {
+  cursor: pointer;
+  border: 1px solid $s_dark;
+  border-radius: 0.25rem;
+  width: 5rem;
+  background-color: $s_light;
+}

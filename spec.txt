@@ -1,0 +1,6 @@
+// Material Design Color Tool SCSS Variable Generator Specs
+
+-- Be able to accept user input of a link from Material Design Color Tool
+  -- use form / input 
+
+-- After submitting input, returns the color theme to the page in a list or optionally download a SCSS starter file

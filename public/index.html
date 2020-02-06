@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>SCSS Generator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-wrapper">
+        <div class="heading">
+          <h2>SCSS Starter File Generator</h2>
+        </div>
+        <div class="content">
+          <ol>
+            <h3>How to use:</h3>
+            <li>
+              Choose a primary and secondary color from
+              <a href="https://material.io/resources/color/">
+                material design color tool</a>.
+            </li>
+            <li>
+              After choosing your color theme,  <strong>paste the link</strong> into the input box and generate.
+            </li>
+            <li>
+              Copy paste the declared color variables into your style sheet and
+              use for consistent color, or download the starter SCSS file which includes utilities for font, color and spacing.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="right-wrapper">
+        <div class="form-wrapper">
+
+          <form id="myForm" autocomplete="off">
+              <input
+                type="text"
+                class=""
+                id="url"
+                name="test_url"
+                placeholder="Paste Material Color Tool URL Here"
+                minlength="20"
+                required
+              />
+            <button class="" id="submit" type="submit">
+              Generate
+            </button>
+          </form>
+        </div>
+          <div id="spinner" class="hidden"></div>
+          <div class="content-output hidden">
+            <p id="output"></p>
+          </div>
+          <button class="hidden" id="downloadBtn" >
+            Download file
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
