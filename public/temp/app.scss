@@ -1,0 +1,30 @@
+/* Material Color Tool SCSS Variables */
+  $primary: #0d47a1;
+$p_light: #5472d3;
+$p_dark: #002171;
+$secondary: #8e24aa;
+$s_light: #c158dc;
+$s_dark: #5c007a;
+
+  /* Font utilities*/
+  $font-size: 0.625rem; // for 1rem = 16px, 0.1rem = 1px
+  $font-family: 'Roboto', sans-serif;
+
+  /* Spacing utilities*/ 
+  $spacing-xs: 4px;
+  $spacing-s: 8px;
+  $spacing-m: 16px;
+  $spacing-ml: 24px;
+  $spacing-l: 32px;
+  $spacing-xl: 48px;
+  $spacing-xxl: 64px;
+  $spacing-xxxl: 128px;
+
+
+  /* Common Mixins */ 
+  @mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+  }
